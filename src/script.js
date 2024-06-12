@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const quantityElements = document.querySelectorAll(".quantity");
     const retryButton = document.getElementById("retryButton");
     const defaultPrices = Array.from(productPriceInputs).map(input => parseFloat(input.value));
+    const defaultQuantities = Array.from(quantityElements).map(element => parseInt(element.textContent, 10));
 
 
     function updateTotal() {
@@ -51,9 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
         productPriceInputs.forEach((input, index) => {
             input.value = defaultPrices[index];
         });
+
+        quantityElements.forEach((element, index) => {
+            element.textContent = defaultQuantities[index];
+        });
         updateTotal();
     });
-    
+
     updateTotal(); // Initial total calculation
 
 
