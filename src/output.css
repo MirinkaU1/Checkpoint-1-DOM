@@ -1569,10 +1569,18 @@ html{
   .md\:h-28{
     height: 7rem;
   }
+
+  .md\:justify-around{
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 1024px){
   .lg\:h-28{
     height: 7rem;
+  }
+
+  .lg\:justify-around{
+    justify-content: space-around;
   }
 }
