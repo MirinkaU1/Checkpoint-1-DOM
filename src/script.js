@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalPriceElement = document.querySelector(".total-price");
     const productPriceInputs = document.querySelectorAll(".product-price-input");
     const quantityElements = document.querySelectorAll(".quantity");
+    const retryButton = document.getElementById("retryButton");
+    const defaultPrices = Array.from(productPriceInputs).map(input => parseFloat(input.value));
+
 
     function updateTotal() {
         let total = 0;
@@ -43,7 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    
+    retryButton.addEventListener("click", () => {
+        productPriceInputs.forEach((input, index) => {
+            input.value = defaultPrices[index];
+        });
+        updateTotal();
+    });
+    
     updateTotal(); // Initial total calculation
+
 
     // Animation du bouton favoris
     const favoriteButtons = document.querySelectorAll(".favorite-btn");
