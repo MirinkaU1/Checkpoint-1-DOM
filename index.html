@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cart</title>
+    <link href="src/output.css" rel="stylesheet">
+    <style>
+        .btn-animate {
+            transition: transform 0.1s ease-in-out;
+        }
+        .btn-animate:active {
+            transform: scale(1.1);
+        }
+    </style>
+    <script src="src/script.js"></script>
+</head>
+<body class="bg-white">
+    <div class="w-full h-lvh bg-white">
+        <div class="sticky text-center py-5 text-black font-semibold">
+            <h1 class="text-lg">My cart</h1>
+        </div>
+        <div class="divider mt-0 -mb-2"></div>
+
+        <!-- PRODUIT 1 -->
+        <div class="grid grid-cols-4 gap-2 sm:gap-4 p-5 bg-white sm:px-52">
+            <div class="col-span-1 row-span-2 bg-gray-800 rounded-lg h-20 lg:h-28"></div>
+            <div class="col-span-2 flex bg-white text-center h-22">
+                <h3 class="self-center">Produit 1</h3>
+            </div>
+            <div class="col-span-1 flex justify-center bg-white rounded-lg h-22 text-green-500">
+                <button type="button" class="favorite-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-span-2 flex bg-white text-center h-22">
+                <div class="relative flex items-center">
+                    <input type="number" class="product-price-input appearance-none border rounded w-full py-2 px-3 text-gray-700 font-bold leading-tight focus:outline-none focus:shadow-outline" value="0" min="0" step="1">
+                    <span class="absolute right-0 font-bold mr-2 text-gray-500">FCFA</span>
+                </div>
+            </div>
+            <div class="col-span-1 flex gap-3 justify-center items-center bg-white rounded-lg h-22">
+                <button class="btn-animate decrement">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-square text-green-500" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                    </svg>
+                </button>
+                <span class="quantity">1</span>
+                <button type="button" class="btn-animate increment">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill text-green-500" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="divider mb-0 -mt-2"></div>
+
+        <!-- PRODUIT 2 -->
+        <div class="grid grid-cols-4 gap-2 sm:gap-4 p-5 -mt-2 bg-white sm:px-52">
+            <div class="col-span-1 row-span-2 bg-gray-800 rounded-lg h-20 md:h-28"></div>
+            <div class="col-span-2 flex bg-white text-center h-22">
+                <h3 class="self-center">Produit 2</h3>
+            </div>
+            <div class="col-span-1 flex justify-center bg-white rounded-lg h-22 text-green-500">
+                <button type="button" class="favorite-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-span-2 flex bg-white text-center h-22">
+                <div class="relative flex items-center">
+                    <input type="number" class="product-price-input appearance-none border rounded w-full py-2 px-3 text-gray-700 font-bold leading-tight focus:outline-none focus:shadow-outline" value="0" min="0" step="1">
+                    <span class="absolute right-0 font-bold mr-2 text-gray-500">FCFA</span>
+                </div>
+            </div>
+            <div class="col-span-1 flex gap-3 justify-center items-center bg-white rounded-lg h-22">
+                <button class="btn-animate decrement">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-square text-green-500" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                    </svg>
+                </button>
+                <span class="quantity">1</span>
+                <button type="button" class="btn-animate increment">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill text-green-500" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="divider mb-0 -mt-2"></div>
+
+        <!-- PRODUIT 3 -->
+        <div class="grid grid-cols-4 gap-2 sm:gap-4 p-5 -mt-2 bg-white sm:px-52">
+            <div class="col-span-1 row-span-2 bg-gray-800 rounded-lg h-20 md:h-28"></div>
+            <div class="col-span-2 flex bg-white text-center h-22">
+                <h3 class="self-center">Produit 3</h3>
+            </div>
+            <div class="col-span-1 justify-center flex bg-white rounded-lg h-22 text-green-500">
+                <button type="button" class="favorite-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-span-2 flex bg-white text-center h-22">
+                <div class="relative flex items-center">
+                    <input type="number" class="product-price-input appearance-none border rounded w-full py-2 px-3 text-gray-700 font-bold leading-tight focus:outline-none focus:shadow-outline" value="0" min="0" step="1">
+                    <span class="absolute right-0 font-bold mr-2 text-gray-500">FCFA</span>
+                </div>
+            </div>
+            <div class="col-span-1 flex gap-3 justify-center items-center bg-white rounded-lg h-22">
+                <button class="btn-animate decrement">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-square text-green-500" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                    </svg>
+                </button>
+                <span class="quantity">1</span>
+                <button type="button" class="btn-animate increment">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill text-green-500" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="divider mb-0 -mt-2"></div>
+        
+        <!-- TOTAL -->
+        <div class="sticky bottom-0 left-0 right-0 bg-white border-dashed border-1 border-green-500 ">
+            <div class="m-5 flex justify-between" id="result">
+                <h3 class="font-semibold">Total:</h3>
+                <span class="font-bold total-price text-lg text-green-500">1000 FCFA</span>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-wide bg-green-500 hover:bg-green-600">
+                    <span class="text-lg text-white">Reéssayer</span>
+                </button>
+            </div>
+            <div class="mt-2 text-center">
+                <p class="text-xs">by MHD</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
